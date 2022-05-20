@@ -1,0 +1,34 @@
+.header {
+    background: var(--secondary-background);
+    padding: 3em 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.31);
+
+    & nav {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & h1 {
+            font-size: 1.4rem;
+            color: var(--main-text);
+        }
+
+        & .theme {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1rem;
+
+            & p {
+                margin-left: .5em;
+                color: var(--main-text);
+                font-weight: 600;
+            }
+        }
+    }
+
+
+
+}

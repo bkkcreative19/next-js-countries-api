@@ -1,0 +1,19 @@
+.country {
+    background: var(--secondary-background);
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    & .img {
+        height: 50%;
+
+        & img {
+            height: 100% !important;
+            width: 100%;
+        }
+    }
+
+    & div {
+        height: 50%;
+    }
+}
