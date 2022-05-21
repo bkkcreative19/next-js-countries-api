@@ -8,10 +8,19 @@ export const Country = ({ country: { name, capital, region, population, flags } 
 
     return (
         <div className={styles.country}>
-            <div className={styles.img}><Image src={flags.png} width={'100%'} height={'100%'} priority /></div>
+            <div className={styles.img}>
+                <img src={flags.png} />
+                {/* <Image src={flags.png} width={293} height={150} priority /> */}
+            </div>
 
-            <div>
-                hi
+            <div className={styles.content}>
+                <h2>{name}</h2>
+
+                <ul>
+                    <li>Population: <span>{population}</span></li>
+                    <li>Region: <span>{region}</span></li>
+                    <li>Capital: <span>{capital}</span></li>
+                </ul>
             </div>
             {/* <Link href='/country/[name]' as={`/country/${name}`}>{name}</Link> */}
         </div>

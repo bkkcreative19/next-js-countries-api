@@ -1,0 +1,1 @@
+export const options = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']

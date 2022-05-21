@@ -1,0 +1,56 @@
+.filterSearch {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 0 7em 0;
+
+    & .search {
+        background: var(--secondary-background);
+        width: 35%;
+        padding: 1.6em 2.2em;
+        display: flex;
+        align-items: center;
+        color: var(--main-text);
+
+        & svg {
+            font-size: 1.3rem;
+            margin-right: .8em;
+            cursor: pointer;
+        }
+
+        & input {
+            background: transparent;
+            border: none;
+            font-size: 1.1rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    & .filter {
+        background: var(--secondary-background);
+        display: flex;
+        align-items: center;
+        padding: 0 1.5em;
+        font-size: 1.1rem;
+        justify-content: space-between;
+        width: 17%;
+        color: var(--main-text);
+        cursor: pointer;
+        position: relative;
+
+        & .dropdown {
+            position: absolute;
+            background: var(--secondary-background);
+            width: 100%;
+            left: 0;
+            top: 4rem;
+            padding: 1.3em;
+
+            & div:not(:first-child) {
+                margin-top: .7em;
+            }
+        }
+    }
+}

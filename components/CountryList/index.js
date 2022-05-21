@@ -4,6 +4,7 @@ import styles from '../../styles/CountryList.module.scss'
 
 
 export const CountryList = ({ countries }) => {
+
     return (
         <section className={styles.countrylist}>
             {countries.map((item, i) => {
