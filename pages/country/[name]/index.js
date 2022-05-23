@@ -1,11 +1,12 @@
 import axios from 'axios'
 import React from 'react'
+import { CountryDetails } from '../../../components/CountryDetails'
 
 const country = ({ data }) => {
-    console.log(data)
+
 
     return (
-        <div>index</div>
+        <><CountryDetails country={data[0]} /></>
     )
 }
 

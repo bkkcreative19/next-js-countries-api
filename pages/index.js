@@ -22,12 +22,18 @@ export default function Home({ data }) {
 
     if (filters) {
 
+
       if (filters.select) {
+        arr = [...data]
         arr = arr.filter(item => item.region === filters.select)
       }
       if (filters.search) {
-        arr = arr.filter(item => item.name === filters.search)
+        arr = [...data]
+        arr = arr.filter(function (item) {
+          return item.name.toLowerCase().indexOf(filters.search.toLowerCase()) != -1; // returns true or false
+        });
       }
+
 
       setFilteredData(arr)
     }
